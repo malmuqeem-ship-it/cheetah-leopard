@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>صدق أم إشاعة – الفهد والنمر</title>
+<title>صحيح أم غير صحيح – الفهد والنمر</title>
 <style>
 body{
   margin:0;
@@ -24,11 +24,11 @@ button{margin:8px;padding:12px 18px;border:0;border-radius:10px;cursor:pointer;f
 </head>
 <body>
 <main>
-  <h1>صدق أم إشاعة – الفهد والنمر</h1>
+  <h1>صحيح أم غير صحيح – الفهد والنمر</h1>
   <p id="question">اضغطي "ابدئي" لعرض أول سؤال</p>
   <div>
-    <button class="b-true" id="btnTrue" disabled>صدق</button>
-    <button class="b-false" id="btnFalse" disabled>إشاعة</button>
+    <button class="b-true" id="btnTrue" disabled>صحيح</button>
+    <button class="b-false" id="btnFalse" disabled>إغير صحيح</button>
   </div>
   <div id="feedback"></div>
   <button id="nextBtn">التالي ↻</button>
@@ -46,10 +46,10 @@ const questions=[
   ex:"صحيح ✅ الفهد يُعد الأسرع بين جميع الحيوانات البرية."},
 
  {q:"النمر لديه خطوط سوداء واضحة على الوجه من العين إلى الفم.",a:false,
-  ex:"إشاعة ❌ هذه الخطوط توجد عند الفهد وليس النمر، وتُسمّى خطوط الدموع، وتساعد الفهد على تقليل وهج الشمس وحماية عينيه أثناء الجري والصيد."},
+  ex:"غير صحيح ❌ هذه الخطوط توجد عند الفهد وليس النمر، وتُسمّى خطوط الدموع، وتساعد الفهد على تقليل وهج الشمس وحماية عينيه أثناء الجري والصيد."},
 
  {q:"بقع الفهد تكون غالبًا على شكل وريدات وليست نقاط.",a:false,
-  ex:"إشاعة ❌ بقع الفهد نقاط دائرية، أما الوريدات فهي تميّز النمر."}
+  ex:"غير صحيح ❌ بقع الفهد نقاط دائرية، أما الوريدات فهي تميّز النمر."}
 ];
 let index=-1,score=0;
 
